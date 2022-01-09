@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     using namespace std;
-    cout << "Podaj s�owo:" << endl;
+    cout << "Podaj słowo:" << endl;
     string word;
     cin>> word;
 
