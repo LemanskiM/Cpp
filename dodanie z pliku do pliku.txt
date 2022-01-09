@@ -1,0 +1,29 @@
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+
+	ifstream odczyt("dane.txt");
+	ofstream zapis("a.txt");
+	int liczba;
+	int ile=0; //zmienna licz¹ca liczby parzyste
+
+	while(!odczyt.eof())
+	{
+
+		odczyt>>liczba;
+		
+		if(liczba%2 == 0)
+			ile++;
+	}
+
+	zapis<<"Liczb parzystych jest "<<ile;
+	
+	odczyt.close();
+	zapis.close();
+	system("PAUSE");
+	return 0;
+}
